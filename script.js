@@ -16,27 +16,38 @@ if (!CanvasRenderingContext2D.prototype.roundRect) {
 // CUSTOM CURSOR
 var cur = document.getElementById('cursor');
 var ring = document.getElementById('cursorRing');
+
 if (cur && ring) {
+  var mx = 0, my = 0, rx = 0, ry = 0;
+
   document.addEventListener('mousemove', function(e) {
-    // Custom cursor logic handled in cursorLoop below
+    mx = e.clientX;
+    my = e.clientY;
+  });
+
+  (function cursorLoop() {
+    cur.style.left = mx + 'px';
+    cur.style.top = my + 'px';
+    rx += (mx - rx) * 0.1;
+    ry += (my - ry) * 0.1;
+    ring.style.left = rx + 'px';
+    ring.style.top = ry + 'px';
+    requestAnimationFrame(cursorLoop);
+  })();
+
+  document.querySelectorAll('a, button, .tl-ctrl-btn').forEach(function(el) {
+    el.addEventListener('mouseenter', function() {
+      cur.style.transform = 'translate(-50%, -50%) scale(1.8)';
+      ring.style.transform = 'translate(-50%, -50%) scale(1.4)';
+      ring.style.borderColor = 'rgba(125, 212, 248, 0.7)';
+    });
+    el.addEventListener('mouseleave', function() {
+      cur.style.transform = 'translate(-50%, -50%) scale(1)';
+      ring.style.transform = 'translate(-50%, -50%) scale(1)';
+      ring.style.borderColor = 'rgba(125, 212, 248, 0.3)';
+    });
   });
 }
-var mx = 0, my = 0, rx = 0, ry = 0;
-
-document.addEventListener('mousemove', function(e) {
-  mx = e.clientX;
-  my = e.clientY;
-});
-
-(function cursorLoop() {
-  cur.style.left = mx + 'px';
-  cur.style.top = my + 'px';
-  rx += (mx - rx) * 0.1;
-  ry += (my - ry) * 0.1;
-  ring.style.left = rx + 'px';
-  ring.style.top = ry + 'px';
-  requestAnimationFrame(cursorLoop);
-})();
 
 // CURSOR SCALE ON HOVER
 document.querySelectorAll('a, button, .tl-ctrl-btn').forEach(function(el) {
