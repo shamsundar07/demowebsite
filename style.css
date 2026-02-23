@@ -432,4 +432,10 @@ footer p { font-size: 0.58rem; color: var(--dim); letter-spacing: 0.1em; }
   .tl-ruler-wrap { padding-left: 60px; }
   .node-box { height: 220px; }
   footer { padding: 22px 20px; }
+  
+}
+@media (hover: none) {
+  .cursor, .cursor-ring { display: none; }
+  body { cursor: auto; }
+  .tl-ctrl-btn, .plat, nav a, .logo { cursor: pointer; }
 }
