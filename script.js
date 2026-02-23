@@ -49,20 +49,6 @@ if (cur && ring) {
   });
 }
 
-// CURSOR SCALE ON HOVER
-document.querySelectorAll('a, button, .tl-ctrl-btn').forEach(function(el) {
-  el.addEventListener('mouseenter', function() {
-    cur.style.transform = 'translate(-50%, -50%) scale(1.8)';
-    ring.style.transform = 'translate(-50%, -50%) scale(1.4)';
-    ring.style.borderColor = 'rgba(125, 212, 248, 0.7)';
-  });
-  el.addEventListener('mouseleave', function() {
-    cur.style.transform = 'translate(-50%, -50%) scale(1)';
-    ring.style.transform = 'translate(-50%, -50%) scale(1)';
-    ring.style.borderColor = 'rgba(125, 212, 248, 0.3)';
-  });
-});
-
 // BACKGROUND NODE NETWORK
 var cv = document.getElementById('nodeCanvas');
 var cx = cv.getContext('2d');
