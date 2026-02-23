@@ -195,7 +195,7 @@ h1 .blue { color: var(--accent); }
 
 #rulerCanvas { width: 100%; height: 22px; display: block; }
 
-.tl-body { position: relative; }
+.tl-body { position: relative; overflow: hidden; }
 
 .tl-row-wrap {
   display: flex;
