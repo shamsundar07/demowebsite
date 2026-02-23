@@ -204,7 +204,6 @@ function bez(a, b, c, d, t) {
   t += 0.012;
   mc2.clearRect(0, 0, mc.width, mc.height);
 
-  // Draw edges
   for (var e = 0; e < mEdges.length; e++) {
     var na = mNodes[mEdges[e][0]], nb = mNodes[mEdges[e][1]];
     var x1 = na.x * mc.width, y1 = na.y * mc.height;
@@ -225,7 +224,6 @@ function bez(a, b, c, d, t) {
     mc2.fill();
   }
 
-  // Draw nodes
   for (var ni = 0; ni < mNodes.length; ni++) {
     var n = mNodes[ni];
     var x = n.x * mc.width, y = n.y * mc.height, w = n.w, h = n.h;
