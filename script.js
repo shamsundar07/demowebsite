@@ -14,6 +14,9 @@ if (!CanvasRenderingContext2D.prototype.roundRect) {
 }
 
 // CUSTOM CURSOR
+if (cur && ring) {
+  document.addEventListener('mousemove', function(e) { ... });
+}
 var cur = document.getElementById('cursor');
 var ring = document.getElementById('cursorRing');
 var mx = 0, my = 0, rx = 0, ry = 0;
