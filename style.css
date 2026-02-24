@@ -23,7 +23,7 @@ body {
   color: var(--text);
   font-family: 'JetBrains Mono', monospace;
   overflow-x: hidden;
-  cursor: pointer;
+  cursor: default;
 }
 
 /* NOISE OVERLAY */
@@ -73,7 +73,7 @@ header {
   letter-spacing: 0.1em;
   color: var(--white);
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
 }
 
 .logo span { color: var(--accent); }
@@ -137,7 +137,7 @@ h1 .blue { color: var(--accent); }
   color: var(--sub);
   font-size: 0.72rem;
   border-right: 1px solid var(--border);
-  cursor: pointer;
+  cursor: default;
   transition: color 0.15s, background 0.15s;
   flex-shrink: 0;
   user-select: none;
@@ -323,7 +323,7 @@ hr {
   transition: all 0.25s;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  cursor: default;
 }
 
 .plat::after {
