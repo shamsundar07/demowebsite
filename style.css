@@ -23,7 +23,7 @@ body {
   color: var(--text);
   font-family: 'JetBrains Mono', monospace;
   overflow-x: hidden;
-  cursor: auto;
+  cursor: pointer;
 }
 
 /* NOISE OVERLAY */
