@@ -73,7 +73,7 @@ header {
   letter-spacing: 0.1em;
   color: var(--white);
   text-decoration: none;
-  cursor: default;
+  cursor: pointer;
 }
 
 .logo span { color: var(--accent); }
@@ -137,7 +137,7 @@ h1 .blue { color: var(--accent); }
   color: var(--sub);
   font-size: 0.72rem;
   border-right: 1px solid var(--border);
-  cursor: default;
+  cursor: pointer;
   transition: color 0.15s, background 0.15s;
   flex-shrink: 0;
   user-select: none;
@@ -323,7 +323,7 @@ hr {
   transition: all 0.25s;
   position: relative;
   overflow: hidden;
-  cursor: default;
+  cursor: pointer;
 }
 
 .plat::after {
