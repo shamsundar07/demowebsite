@@ -385,7 +385,7 @@ footer {
   gap: 16px;
 }
 
-footer p { font-size: 0.58rem; color: var(--dim); letter-spacing: 0.1em; }
+footer p { font-size: 0.58rem; color: var(--sub); letter-spacing: 0.1em; }
 
 /* ANIMATIONS */
 @keyframes up {
