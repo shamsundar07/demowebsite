@@ -409,8 +409,3 @@ footer p { font-size: 0.58rem; color: var(--dim); letter-spacing: 0.1em; }
   footer { padding: 22px 20px; }
   
 }
-@media (hover: none) {
-  .cursor, .cursor-ring { display: none; }
-  body { cursor: auto; }
-  .tl-ctrl-btn, .plat, nav a, .logo { cursor: pointer; }
-}
