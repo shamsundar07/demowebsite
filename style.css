@@ -407,5 +407,7 @@ footer p { font-size: 0.58rem; color: var(--dim); letter-spacing: 0.1em; }
   .tl-ruler-wrap { padding-left: 60px; }
   .node-box { height: 220px; }
   footer { padding: 22px 20px; }
-  
+}
+a, .plat, .logo, .tl-ctrl-btn, .tool-pill {
+  cursor: pointer;
 }
