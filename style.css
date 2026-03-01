@@ -239,7 +239,7 @@ h1 .blue { color: var(--accent); }
 @keyframes phA { from { left: 120px; } to { left: 100%; } }
 
 /* SECTIONS */
-section { padding: 90px 40px; }
+section { padding: 80px 40px; }
 
 h2 {
   font-family: 'Syne', sans-serif;
@@ -257,10 +257,7 @@ hr {
 }
 
 /* ABOUT */
-#about {
-  margin-top: 40px;
-  padding-bottom: 40px;
-}
+
 .letter-wrap { max-width: 680px; }
 
 .letter-intro {
@@ -302,9 +299,7 @@ hr {
 .tool-pill:hover { border-color: var(--accent); color: var(--accent); }
 
 /* FIND ME */
-#find {
-  padding-top: 40px;
-}
+
 .find-intro {
   font-size: 0.78rem;
   color: var(--sub);
@@ -406,8 +401,8 @@ footer p { font-size: 0.58rem; color: var(--sub); letter-spacing: 0.1em; }
 /* RESPONSIVE */
 @media (max-width: 768px) {
   header { padding: 14px 20px; }
-  .hero { padding: 90px 20px 220px; }
-  section { padding: 60px 20px; }
+  .hero { padding: 80px 20px 160px; }
+  section { padding: 50px 20px; }
   hr { margin: 0 20px; }
   .tl-row-label { width: 60px; font-size: 0.42rem; }
   .tl-controls { padding-left: 60px; }
