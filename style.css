@@ -301,6 +301,9 @@ hr {
 .tool-pill:hover { border-color: var(--accent); color: var(--accent); }
 
 /* FIND ME */
+#find {
+  padding-top: 40px;
+}
 .find-intro {
   font-size: 0.78rem;
   color: var(--sub);
