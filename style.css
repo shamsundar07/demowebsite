@@ -259,6 +259,7 @@ hr {
 /* ABOUT */
 #about {
   margin-top: 40px;
+  padding-bottom: 40px;
 }
 .letter-wrap { max-width: 680px; }
 
