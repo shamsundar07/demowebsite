@@ -128,8 +128,9 @@ h1 .blue { color: var(--accent); }
   backdrop-filter: blur(10px);
   border-radius: 2px;
   overflow: hidden;
+  margin-left: calc(-1 * var(--side));
+  margin-right: calc(-1 * var(--side));
 }
-
 .tl-controls {
   display: flex;
   align-items: center;
@@ -430,11 +431,14 @@ a, .plat, .logo, .tl-ctrl-btn, .tool-pill {
     --side: 20px;
   }
 
-  .hero {
-    min-height: auto;
-    padding: var(--space-lg) var(--side);
-    gap: var(--space-md);
-  }
+.hero {
+  min-height: 0;
+  padding: var(--space-lg) var(--side) var(--space-md);
+  gap: var(--space-md);
+}
+.hero {
+  min-height: 0 !important;
+}
 
   .tl-row-label { width: 60px; font-size: 0.42rem; }
   .tl-controls { padding-left: 60px; }
